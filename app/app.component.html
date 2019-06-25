@@ -1,0 +1,132 @@
+<ul id="wb-tphp">
+<li class="wb-slc">
+<a class="wb-sl" href="#wb-cont" translate>gcweb.skip-main-link</a>
+</li>
+<li class="wb-slc">
+<a class="wb-sl" href="#wb-info" translate>gcweb.skip-about-link</a>
+</li>
+</ul><header role="banner">
+<div id="wb-bnr" class="container">
+<section id="wb-lng" class="d-none d-md-block text-right">
+<h2 class="wb-inv" translate>gcweb.language-sel-title</h2>
+<div class="row">
+<div class="col-md-12">
+<ul class="list-inline mb-0">
+<li><a [lang]="altLang" href="#" (click)="switchLanguage($event)">{{altLangLabel}}</a></li>
+</ul>
+</div>
+</div>
+</section>
+<div class="row">
+<div class="brand col-xs-8 col-sm-9 col-md-6">
+<a [href]="'https://www.canada.ca/'+currentLang+'.html'"><img tabindex="-1" [src]="'./gcweb/assets/sig-blk-'+currentLang+'.svg'"><span class="wb-inv"> <span lang="en">Government of Canada</span> / <span lang="fr">Gouvernement du Canada</span></span></a>
+</div>
+<section class="wb-mb-links col-xs-4 col-sm-3 d-none" id="wb-glb-mn">
+<h2 translate>gcweb.search-menus-title</h2>
+<ul class="list-inline text-right chvrn">
+<li><a href="#mb-pnl" [title]="'gcweb.search-menus-title' | translate" aria-controls="mb-pnl" class="overlay-lnk" role="button"><span class="fa fa-search"><span class="glyphicon glyphicon-th-list"><span class="wb-inv" translate>gcweb.search-menus-title</span></span></span></a></li>
+</ul>
+<div id="mb-pnl"></div>
+</section>
+<section id="wb-srch" class="col text-right d-none d-md-block">
+<h2 translate>gcweb.search-title</h2>
+<form action="#" method="post" name="cse-search-box" role="search" class="form-inline justify-content-end">
+<div class="form-group">
+<label for="wb-srch-q" class="wb-inv" translate>gcweb.search-website</label>
+<input id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control" name="q" type="search" value="" size="27" maxlength="150" [placeholder]="'gcweb.search-placeholder' | translate">
+<datalist id="wb-srch-q-ac">
+<!--[if lte IE 9]><select></select><![endif]-->
+</datalist>
+</div>
+<div class="form-group submit">
+<button type="submit" id="wb-srch-sub" class="btn btn-primary btn-small" name="wb-srch-sub"><span class="fa fa-search"></span><span class="wb-inv" translate>gcweb.search-title</span></button>
+</div>
+</form>
+</section>
+</div>
+</div>
+<nav role="navigation" id="wb-sm" data-ajax-replace="/gcweb/ajax/sitemenu-en.html" data-trgt="mb-pnl" class="wb-menu d-none d-md-block" typeof="SiteNavigationElement">
+<div class="container nvbar">
+<h2 translate>gcweb.topics-title</h2>
+<div class="row">
+<ul class="list-inline menu">
+<li><a href="https://www.canada.ca/en/services/jobs.html">Jobs</a></li>
+<li><a href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration</a></li>
+<li><a href="https://travel.gc.ca/">Travel</a></li>
+<li><a href="https://www.canada.ca/en/services/business.html">Business</a></li>
+<li><a href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
+<li><a href="https://www.canada.ca/en/services/health.html">Health</a></li>
+<li><a href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
+<li><a href="https://www.canada.ca/en/services.html">More services</a></li>
+</ul>
+</div>
+</div>
+</nav>
+</header>
+
+<main role="main" property="mainContentOfPage" class="container">
+
+  <div class="row mrgn-tp-lg" *ngIf="!inited">
+    <div class="col-sm-12 page-load">
+      <div class="loading-indicator"></div>
+    </div>
+  </div>
+
+  <ng-container *ngIf="inited">
+    <router-outlet id="primaryOutlet"></router-outlet>
+  </ng-container>
+
+  <div class="pagedetails">
+    <div class="row">
+      <div class="col-md-6 col-lg-5">
+        <a href="https://www.canada.ca/en/report-problem.html" class="btn btn-default btn-block">
+          <span class="fa fa-caret-right"></span> {{ 'gcweb.report-link' | translate}}
+        </a>
+      </div>
+    </div>
+    <div class="row mrgn-tp-sm">
+      <dl id="wb-dtmd" class="col-sm-12">
+        <dt>{{'gcweb.date-modified' | translate}}</dt>
+        <dd><time property="dateModified">2018-11-11</time></dd>
+      </dl>
+    </div>
+  </div>
+</main>
+
+<footer role="contentinfo" id="wb-info">
+<nav role="navigation" class="container wb-navcurr">
+<h2 class="wb-inv" translate>gcweb.about-govt-title</h2>
+<ul class="list-unstyled colcount-sm-2 colcount-md-3">
+<li><a href="https://www.canada.ca/en/contact.html">Contact us</a></li>
+<li><a href="https://www.canada.ca/en/government/dept.html">Departments and agencies</a></li>
+<li><a href="https://www.canada.ca/en/government/publicservice.html">Public service and military</a></li>
+<li><a href="https://www.canada.ca/en/news.html">News</a></li>
+<li><a href="https://www.canada.ca/en/government/system/laws.html">Treaties, laws and regulations</a></li>
+<li><a href="https://www.canada.ca/en/transparency/reporting.html">Government-wide reporting</a></li>
+<li><a href="http://pm.gc.ca/eng">Prime Minister</a></li>
+<li><a href="https://www.canada.ca/en/government/system.html">How government works</a></li>
+<li><a href="http://open.canada.ca/en/">Open government</a></li>
+</ul> </nav>
+<div class="brand">
+<div class="container">
+<div class="row">
+<nav class="col-md-9 col-lg-10 ftr-urlt-lnk">
+<h2 class="wb-inv" translate>gcweb.about-title</h2>
+<ul>
+<li><a href="https://www.canada.ca/en/social.html">Social media</a></li>
+<li><a href="https://www.canada.ca/en/mobile.html">Mobile applications</a></li>
+<li><a href="https://www1.canada.ca/en/newsite.html">About Canada.ca</a></li>
+<li><a href="https://www.canada.ca/en/transparency/terms.html">Terms and conditions</a></li>
+<li><a href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+</ul>
+</nav>
+<div class="col-xs-6 d-md-none tofpg">
+<a href="#wb-cont">{{'gcweb.page-top-link' | translate}} <span class="fa fa-caret-up"></span></a>
+</div>
+<div class="col-xs-6 col-md-3 col-lg-2 text-right">
+<object type="image/svg+xml" tabindex="-1" role="img" data="./gcweb/assets/wmms-blk.svg" aria-label="Symbol of the Government of Canada"></object>
+</div>
+</div>
+</div>
+</div>
+</footer>

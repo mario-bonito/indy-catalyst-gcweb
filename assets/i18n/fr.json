@@ -1,0 +1,56 @@
+{
+  "app": {
+    "breadcrumb": "Accueil",
+    "title": "Demo du Livreorg de SPAC"
+  },
+  "category": {
+    "aboriginal_supplier": {
+      "Y": "Oui",
+      "N": "Non"
+    }
+  },
+  "gcweb": {
+    "about-title": "À propos de ce site",
+    "about-govt-title": "À propos du gouvernement",
+    "date-modified": "Date de modification : ",
+    "here-title": "Vous êtes ici&nbpsp;:",
+    "language-sel-title": "Sélection de la langue",
+    "page-top-link": "Haut de la page ",
+    "report-link": "Signaler un problème ou une erreur sur cette page",
+    "search-menus-title": "Recherche et menus",
+    "search-placeholder": "Rechercher dans Canada.ca",
+    "search-title": "Recherche",
+    "search-website": "Recherchez le site Web",
+    "skip-about-link": "Passer à « Au sujet du gouvernement »",
+    "skip-main-link": "Passer au contenu principal"
+  },
+  "home": {
+    "title": "Livreorg de SPAC",
+    "title-orgs": "Fournisseurs inscrits",
+    "title-certs": "Justificatifs d'identité",
+    "guides-and-help": {
+      "title": "Guides et aide",
+      "about-orgbook-link": "À propos du Livreorg de SPAC (bêta)",
+      "about-orgbook-url": "#TODO",
+      "privacy-notice-link": "Avis de confidentialité",
+      "privacy-notice-url": "#TODO",
+      "help-link": "Aide",
+      "help-url": "#TODO"
+    },
+    "contact-us": {
+      "title": "Communiquez avec nous",
+      "email": "Adresse électronique&nbsp;",
+      "email-link": "support@achatsetventes.gc.ca"
+    },
+    "related-services" : {
+      "title": "Services et information connexes",
+      "supplier-registration-link": "Données d'inscription des fournisseurs (DIF)",
+      "supplier-registration-url": "#TODO",
+      "buyandsell-link": "achatsetventes.gc.ca",
+      "buyandsell-url": "https://achatsetventes.gc.ca"
+    }
+  },
+  "search": {
+    "title": "Trouver un fournisseur inscrit"
+  }
+}

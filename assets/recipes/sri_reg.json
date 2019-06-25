@@ -1,0 +1,26 @@
+{
+  "title": "Supplier Registration - Additional Certifications",
+  "claimTypes": [
+    {
+      "title": "Vendor Credential",
+      "schemaName": "pspc-sri.gc-vendor-credential",
+      "regText": "Register as a Vendor"
+    },
+    {
+      "title": "Women-Owned Business",
+      "schemaName": "pspc-sri.women-owned-supplier",
+      "regText": "Obtain your certification as a Women-Owned Business",
+      "depends": [
+        "pspc-sri.gc-vendor-credential"
+      ]
+    },
+    {
+      "title": "Aboriginal-Owned Business",
+      "schemaName": "isc-inac.aboriginal-business",
+      "regText": "Obtain your certification as an Aboriginal-Owned Business",
+      "depends": [
+        "pspc-sri.gc-vendor-credential"
+      ]
+    }
+  ]
+}
