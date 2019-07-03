@@ -2,6 +2,8 @@
   "app": {
     "breadcrumb": "Home",
     "title": "OrgBook GC",
+    "alt-lang-is": "fr",
+    "alt-lang-full": "Francais",
     "header": {
       "title": "Federal Corporation Register",
       "logo-alt-text": "Government of Canada Logo"
