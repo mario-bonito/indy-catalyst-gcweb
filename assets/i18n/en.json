@@ -1,9 +1,9 @@
 {
   "app": {
     "breadcrumb": "Home",
-    "title": "PSPC OrgBook",
+    "title": "OrgBook GC",
     "header": {
-      "title": "PSPC Supplier Certifications Register",
+      "title": "Federal Corporation Register",
       "logo-alt-text": "Government of Canada Logo"
     },
     "footer": {
@@ -78,12 +78,12 @@
     "verified": "Verified"
   },
   "home": {
-    "title": "PSPC OrgBook",
-    "title-orgs": "Registered suppliers",
-    "title-certs": "Credentials",
+    "title": "OrgBook GC",
+    "title-orgs": "Federal Corporation",
+    "title-certs": "Incorporations",
     "guides-and-help": {
       "title": "Guides and help",
-      "about-orgbook-link": "About the PSPC OrgBook (beta)",
+      "about-orgbook-link": "About the OrgBook GC (beta)",
       "about-orgbook-url": "#TODO",
       "privacy-notice-link": "Privacy notice",
       "privacy-notice-url": "#TODO",
