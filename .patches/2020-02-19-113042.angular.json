@@ -1,0 +1,4 @@
+[
+  { "op": "replace", "path": "/projects/vcr-web/architect/build/options/assets", "value": [{"glob": "**/*", "input": "src/themes/_active/assets", "output": "/assets"}, {"glob": "**/*", "input": "src/themes/_active/theme", "output": "/"}, {"glob": "favicon.ico", "input": "src/themes/_active/theme/", "output": "/"}, {"glob": "robots.txt", "input": "src/themes/_active", "output": "/"} ]},
+  { "op": "replace", "path": "/projects/vcr-web/architect/build/options/styles", "value": [] }
+]
