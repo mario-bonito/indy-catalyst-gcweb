@@ -1,143 +1,275 @@
 {
-  "app": {
-    "breadcrumb": "Home",
-    "title": "OrgBook GC",
-    "alt-lang-is": "fr",
-    "alt-lang-full": "Francais",
-    "header": {
-      "title": "Federal Corporation Register",
-      "logo-alt-text": "Government of Canada Logo"
-    },
-    "footer": {
-      "disclaimer": "Disclaimer",
-      "privacy": "Privacy",
-      "accessibility": "Accessibility",
-      "copyright": "Copyright",
-      "contact": "Contact Us"
-    }
-  },
-  "attribute": {
-    "aboriginal_status": "Aboriginal Status",
-    "entity_status": "Supplier Status",
-    "org_type": "Organization Type"
-  },
-  "category": {
-    "aboriginal_supplier": {
-      "Y": "Yes",
-      "N": "No"
-    },
-    "entity_status": {
-      "active": "Active",
-      "deleted": "Deleted",
-      "incomplete": "Incomplete",
-      "suspended": "Suspended",
-      "disbarred": "Disbarred",
-      "unavailable": "Unavailable",
-      "reassigned": "Reassigned"
-    },
-    "org_type": {
-      "individual": "Individual",
-      "partnership": "Partnership",
-      "corporation": "Corporation",
-      "other": "Other"
-    }
-  },
-  "cert": {
-    "breadcrumb": "Certification Details",
-    "effective-date": "Issued",
-    "expiry-date": "Expires",
-    "inactive-message": "This credential is inactive:",
-    "issuer": "Issuer",
-    "issuer-website": "Issuer Website",
-    "related-certs": "Related Credentials",
-    "requesting-proof": "Requesting proof of credential ...",
-    "return-link": "Back to Certification Details",
-    "verify-button-label": "Verify Credential",
-    "whats-this-link": "What's this?",
-    "verify-status": "Verification Status:"
-  },
-  "gcweb": {
-    "about-title": "About this site",
-    "about-govt-title": "About government",
-    "date-modified": "Date modified: ",
-    "here-title": "You are here:",
-    "language-sel-title": "Language selection",
-    "page-top-link": "Top of Page",
-    "report-link": "Report a problem on this page",
-    "search-menus-title": "Search and menus",
-    "search-placeholder": "Search Canada.ca",
-    "search-title": "Search",
-    "search-website": "Search website",
-    "skip-about-link": "Skip to \"About government\"",
-    "skip-main-link": "Skip to main content",
-    "topics-title": "Topics menu"
-  },
-  "general": {
-    "none": "None",
-    "map-link": "Show on map",
-    "next-link": "Next",
-    "prev-link": "Previous",
-    "verified": "Verified"
-  },
-  "home": {
-    "title": "OrgBook GC",
-    "title-orgs": "Federal Corporation",
-    "title-certs": "Incorporations",
-    "guides-and-help": {
-      "title": "Guides and help",
-      "about-orgbook-link": "About the OrgBook GC (beta)",
-      "about-orgbook-url": "#TODO",
-      "privacy-notice-link": "Privacy notice",
-      "privacy-notice-url": "#TODO",
-      "help-link": "Help",
-      "help-url": "#TODO"
-    },
-    "contact-us": {
-      "title": "Contact us",
-      "email": "E-mail",
-      "email-link": "support@buyandsell.gc.ca"
-    },
-    "related-services" : {
-      "title": "Related services and information",
-      "supplier-registration-link": "Supplier Registration Information (SRI)",
-      "supplier-registration-url": "#TODO",
-      "buyandsell-link": "buyandsell.gc.ca",
-      "buyandsell-url": "https://buyandsell.gc.ca"
-    }
-  },
-  "issuer": {
-    "breadcrumb": "Issuer Details",
-    "cert-types": "Permit and Licence Types",
-    "effective-date": "Effective Date",
-    "expiry-date": "Expiry Date",
-    "website": "URL"
-  },
-  "not-found": {
-    "breadcrumb": "Not Found",
-    "title": "Page not found",
-    "error": "This page could not be located. Please check the URL or follow the link below.",
-    "return-link-title": "Return to the home page"
-  },
-  "org": {
-    "breadcrumb": "Supplier Certifications",
-    "certs-title": "Supplier Certifications",
-    "dba": "Doing Business As",
-    "effective-date": "Effective Date",
-    "identifier": "Supplier PBN",
-    "location": "Location",
-    "locations": "Locations",
-    "return-link": "Back to Supplier Certifications",
-    "type": "Organization Type"
-  },
-  "search": {
-    "title": "Find a registered supplier",
-    "by-cert": "Certification",
-    "by-location": "Location",
-    "by-name": "Name",
-    "by-pbn": "PBN",
-    "no-results": "No results",
-    "placeholder": "search",
-    "results-title": "Search Results",
-    "return-link": "Back to Search"
-  }
+	"app": {
+		"breadcrumb": "OrgBook GC",
+		"title": "OrgBook GC",
+		"header": {
+			"title": "Federal Corporation Register",
+			"logo-alt-text": "Government of Canada Logo"
+		},
+		"footer": {
+			"contact-us": {
+				"text": "Contact us",
+				"link": "https://www.canada.ca/en/contact.html"
+			},
+			"departments-agencies": {
+				"text": "Departments and agencies",
+				"link": "https://www.canada.ca/en/government/dept.html"
+			},
+			"ps-and-military": {
+				"text": "Public service and military",
+				"link": "https://www.canada.ca/en/government/publicservice.html"
+			},
+			"news": {
+				"text": "News",
+				"link": "https://www.canada.ca/en/news.html"
+			},
+			"treaties": {
+				"text": "Treaties, laws and regulations",
+				"link": "https://www.canada.ca/en/government/system/laws.html"
+			},
+			"reporting": {
+				"text": "Government-wide reporting",
+				"link": "https://www.canada.ca/en/transparency/reporting.html"
+			},
+			"pm": {
+				"text": "Prime Minister",
+				"link": "https://pm.gc.ca/eng"
+			},
+			"about-government": {
+				"text": "About government",
+				"link": "https://www.canada.ca/en/government/system.html"
+			},
+			"open-government": {
+				"text": "Open government",
+				"link": "https://open.canada.ca/en"
+			},
+			"social-media": {
+				"text": "Social media",
+				"link": "https://www.canada.ca/en/social.html"
+			},
+			"mobile-applications": {
+				"text": "Mobile applications",
+				"link": "https://www.canada.ca/en/mobile.html"
+			},
+			"about-canada": {
+				"text": "About Canada",
+				"link": "https://www.canada.ca/en/government/about.html"
+			},
+			"terms-conditions": {
+				"text": "Terms and conditions",
+				"link": "https://www.canada.ca/en/transparency/terms.html"
+			},
+			"privacy-statement": {
+				"text": "Privacy",
+				"link": "https://www.canada.ca/en/transparency/privacy.html"
+			}
+		},
+		"site-menu": {
+			"jobs": {
+				"text": "Jobs and the workplace",
+				"link": "https://www.canada.ca/en/services/jobs.html"
+			},
+			"immigate": {
+				"text": "Immigration and citizenship",
+				"link": "https://www.canada.ca/en/services/immigration-citizenship.html"
+			},
+			"voyage": {
+				"text": "Travel and tourism",
+				"link": "https://travel.gc.ca/"
+			},
+			"enterprise": {
+				"text": "Business and industry",
+				"link": "https://www.canada.ca/en/services/business.html"
+			},
+			"benefits": {
+				"text": "Benefits",
+				"link": "https://www.canada.ca/en/services/benefits.html"
+			},
+			"health": {
+				"text": "Health",
+				"link": "https://www.canada.ca/en/services/health.html"
+			},
+			"taxes": {
+				"text": "Taxes",
+				"link": "https://www.canada.ca/en/services/taxes.html"
+			},
+			"environment": {
+				"text": "Environment and natural resources",
+				"link": "https://www.canada.ca/en/services/environment.html"
+			},
+			"security": {
+				"text": "National security and defence",
+				"link": "https://www.canada.ca/en/services/defence.html"
+			},
+			"culture": {
+				"text": "Culture, history and sport",
+				"link": "https://www.canada.ca/en/services/culture.html"
+			},
+			"justice": {
+				"text": "Policing, justice and emergencies",
+				"link": "https://www.canada.ca/en/services/policing.html"
+			},
+			"transport": {
+				"text": "Transport and infrastructure",
+				"link": "https://www.canada.ca/en/services/transport.html"
+			},
+			"world": {
+				"text": "Canada and the world",
+				"link": "http://international.gc.ca/world-monde/index.aspx?lang=eng"
+			},
+			"money": {
+				"text": "Money and finances",
+				"link": "https://www.canada.ca/en/services/finance.html"
+			},
+			"science": {
+				"text": "Science and innovation",
+				"link": "https://www.canada.ca/en/services/science.html"
+			}
+		}
+	},
+	"attribute": {
+		"aboriginal_status": "Aboriginal Status",
+		"entity_status": "Supplier Status",
+		"org_type": "Organization Type"
+	},
+	"category": {
+		"aboriginal_supplier": {
+			"Y": "Yes",
+			"N": "No"
+		},
+		"entity_status": {
+			"Active": "Active",
+			"Deleted": "Deleted",
+			"Incomplete": "Incomplete",
+			"Suspended": "Suspended",
+			"Disbarred": "Disbarred",
+			"Unavailable": "Unavailable",
+			"Reassigned": "Reassigned",
+      "BC Company": "BC Company"
+		},
+		"org_type": {
+			"individual": "Individual",
+			"partnership": "Partnership",
+			"corporation": "Corporation",
+			"other": "Other"
+		}
+	},
+	"cert": {
+		"breadcrumb": "Certification Details",
+		"effective-date": "Issued",
+		"expiry-date": "Expires",
+		"inactive-message": "This credential is inactive:",
+		"issuer": "Issuer",
+		"issuer-website": "Issuer Website",
+		"related-certs": "Related Credentials",
+		"requesting-proof": "Requesting proof of credential ...",
+		"return-link": "Back to Certification Details",
+		"verify-button-label": "Verify Credential",
+		"whats-this-link": "What's this?",
+		"verify-status": "Verification Status:"
+	},
+	"gcweb": {
+		"about-title": "About this site",
+		"report-problem": {
+			"text": "Report a problem on this page",
+			"link": "https://www.canada.ca/en/report-problem.html"
+		},
+		"bc-home": {
+			"text": "Home",
+			"link": "https://www.canada.ca/en.html"
+		},
+		"menu-link": "/gcweb/ajax/sitemenu-v2-en.html",
+		"about-govt-title": "About government",
+		"date-modified": "Date modified:",
+		"here-title": "You are here:",
+		"language-sel-title": "Language selection",
+		"page-top-link": "Top of Page",
+		"search-menus-title": "Search and menus",
+		"search-placeholder": "Search Canada.ca",
+		"search-title": "Search",
+		"search-post": "https://www.canada.ca/en/sr/srb.html",
+		"search-website": "Search website",
+		"skip-about-link": "Skip to \"About government\"",
+		"skip-main-link": "Skip to main content",
+		"topics-title": "Topics menu",
+		"symbol-government": "Symbol of the Government of Canada"
+	},
+	"general": {
+		"none": "None",
+		"map-link": "Show on map",
+		"next-link": "Next",
+		"prev-link": "Previous",
+		"verified": "Verified"
+	},
+	"home": {
+		"title": "OrgBook GC",
+		"title-orgs": "Active federal corporations",
+		"title-certs": "Verifiable credentials held",
+		"title-this-week": "Credentials added this week",
+		"lead": "OrgBook GC is a searchable public directory of open verifiable data about federal corporations in Canada",
+		"guides-and-help": {
+			"title": "Guides and help",
+			"about-orgbook-link": "About the OrgBook GC (beta)",
+			"about-orgbook-url": "#TODO",
+			"privacy-notice-link": "Privacy notice",
+			"privacy-notice-url": "#TODO",
+			"help-link": "Help",
+			"help-url": "#TODO"
+		},
+		"about":
+		{
+			"title" : "About the OrgBook",
+			"blurb" : "This new service uses cutting-edge blockchain-based technology, which provides the foundation to help GC move to a digital economy.\n\nOrgBook GC supports our goal to streamline and modernize services for small and medium sized enterprises (SME) as part of our broader Digital Government Strategy.\n\nRight now, you can use OrgBook GC to quickly verify if an organization is legally registered to do business in Canada as a corporation.\n\nIn the future, verifiable data about other organizations types such as sole proprietors and societies will be added. As well, other important verifable data such as the permits, licenses, and other accreditations these organizations hold will be added to OrgBook GC."
+		},
+		"contact-us": {
+			"title": "Contact us",
+			"email": "E-mail",
+			"email-link": "support@buyandsell.gc.ca"
+		},
+		"related-services": {
+			"title": "Related services and information",
+			"supplier-registration-link": "Supplier Registration Information (SRI)",
+			"supplier-registration-url": "#TODO",
+			"buyandsell-link": "buyandsell.gc.ca",
+			"buyandsell-url": "https://buyandsell.gc.ca"
+		}
+	},
+	"issuer": {
+		"breadcrumb": "Issuer Details",
+		"cert-types": "Permit and Licence Types",
+		"effective-date": "Effective Date",
+		"expiry-date": "Expiry Date",
+		"website": "URL"
+	},
+	"not-found": {
+		"breadcrumb": "Not Found",
+		"title": "Page not found",
+		"error": "This page could not be located. Please check the URL or follow the link below.",
+		"return-link-title": "Return to the home page"
+	},
+	"org": {
+		"breadcrumb": "Supplier Certifications",
+		"certs-title": "Supplier Certifications",
+		"dba": "Doing Business As",
+		"effective-date": "Effective Date",
+		"identifier": "Supplier PBN",
+		"location": "Location",
+		"locations": "Locations",
+		"return-link": "Back to Supplier Certifications",
+		"type": "Organization Type"
+	},
+	"search": {
+		"title": "Search for a Federal Corporation",
+		"by-cert": "Certification",
+		"by-location": "Location",
+		"by-name": "Name",
+		"by-pbn": "PBN",
+		"no-results": "No results",
+		"placeholder": "search",
+		"results-title": "{{elm}} federal corporations fit your search",
+		"return-link": "Back to Search"
+	},
+	"records": {
+		"title" : "Current Statistics"
+	}
 }

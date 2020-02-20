@@ -1,0 +1,18 @@
+<nav id="wb-bc" property="breadcrumb">
+    <h2>{{ 'gcweb.here-title' | translate }}</h2>
+    <div class="container">
+      <ol class="row breadcrumb mrgn-tp-md">
+        <li>
+          <a href="{{ 'gcweb.bc-home.link' | translate }}" translate>gcweb.bc-home.text</a>
+        </li>
+        <li >
+          <a [routerLink]="'/' | localize" translate>app.breadcrumb</a>
+        </li>
+        <ng-template *ngFor="let bc of breadcrumbs">
+          <li *ngIf="bc.url">
+            <a tabIndex="0" [title]="bc.label | translate" [routerLink]="[bc.url]">{{ bc.label | translate }}</a>
+          </li>
+        </ng-template>
+      </ol>
+    </div>
+</nav>
