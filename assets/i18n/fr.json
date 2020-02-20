@@ -1,56 +1,211 @@
 {
-  "app": {
-    "breadcrumb": "Accueil",
-    "title": "Demo du Livreorg de SPAC"
-  },
-  "category": {
-    "aboriginal_supplier": {
-      "Y": "Oui",
-      "N": "Non"
-    }
-  },
-  "gcweb": {
-    "about-title": "À propos de ce site",
-    "about-govt-title": "À propos du gouvernement",
-    "date-modified": "Date de modification : ",
-    "here-title": "Vous êtes ici&nbpsp;:",
-    "language-sel-title": "Sélection de la langue",
-    "page-top-link": "Haut de la page ",
-    "report-link": "Signaler un problème ou une erreur sur cette page",
-    "search-menus-title": "Recherche et menus",
-    "search-placeholder": "Rechercher dans Canada.ca",
-    "search-title": "Recherche",
-    "search-website": "Recherchez le site Web",
-    "skip-about-link": "Passer à « Au sujet du gouvernement »",
-    "skip-main-link": "Passer au contenu principal"
-  },
-  "home": {
-    "title": "Livreorg de SPAC",
-    "title-orgs": "Fournisseurs inscrits",
-    "title-certs": "Justificatifs d'identité",
-    "guides-and-help": {
-      "title": "Guides et aide",
-      "about-orgbook-link": "À propos du Livreorg de SPAC (bêta)",
-      "about-orgbook-url": "#TODO",
-      "privacy-notice-link": "Avis de confidentialité",
-      "privacy-notice-url": "#TODO",
-      "help-link": "Aide",
-      "help-url": "#TODO"
-    },
-    "contact-us": {
-      "title": "Communiquez avec nous",
-      "email": "Adresse électronique&nbsp;",
-      "email-link": "support@achatsetventes.gc.ca"
-    },
-    "related-services" : {
-      "title": "Services et information connexes",
-      "supplier-registration-link": "Données d'inscription des fournisseurs (DIF)",
-      "supplier-registration-url": "#TODO",
-      "buyandsell-link": "achatsetventes.gc.ca",
-      "buyandsell-url": "https://achatsetventes.gc.ca"
-    }
-  },
-  "search": {
-    "title": "Trouver un fournisseur inscrit"
-  }
+	"app": {
+		"breadcrumb": "Livreorg GC",
+		"title": "Demo du Livreorg GC",
+		"header": {
+			"title": "Registre des sociétés de régime fédérale",
+			"logo-alt-text": "Gouvernement du Canada"
+		},
+		"footer": {
+			"contact-us": {
+				"text": "Contactez-nous",
+				"link": "https://www.canada.ca/fr/contact.html"
+			},
+			"departments-agencies": {
+				"text": "Ministères et organismes",
+				"link": "https://www.canada.ca/fr/gouvernement/min.html"
+			},
+			"ps-and-military": {
+				"text": "Fonction publique et force militaire",
+				"link": "https://www.canada.ca/fr/gouvernement/fonctionpublique.html"
+			},
+			"news": {
+				"text": "Nouvelles",
+				"link": "https://www.canada.ca/fr/nouvelles.html"
+			},
+			"treaties": {
+				"text": "Traités, lois et règlements",
+				"link": "https://www.canada.ca/fr/gouvernement/systeme/lois.html"
+			},
+			"reporting": {
+				"text": "Rapports à l'échelle du gouvernement",
+				"link": "https://www.canada.ca/fr/transparence/rapports.html"
+			},
+			"pm": {
+				"text": "Premier ministre",
+				"link": "http://pm.gc.ca/fra"
+			},
+			"about-government": {
+				"text": "À propos du gouvernement",
+				"link": "https://www.canada.ca/fr/gouvernement/systeme.html"
+			},
+			"open-government": {
+				"text": "Gouvernement ouvert",
+				"link": "http://ouvert.canada.ca/"
+			},
+			"social-media": {
+				"text": "Médias sociaux",
+				"link": "https://www.canada.ca/fr/sociaux.html"
+			},
+			"mobile-applications": {
+				"text": "Applications mobiles",
+				"link": "https://www.canada.ca/fr/mobile.html"
+			},
+			"about-canada": {
+				"text": "À propos de Canada.ca",
+				"link": "https://www.canada.ca/fr/gouvernement/a-propos.html"
+			},
+			"terms-conditions": {
+				"text": "Avis",
+				"link": "https://www.canada.ca/fr/transparence/avis.html"
+			},
+			"privacy-statement": {
+				"text": "Confidentialité",
+				"link": "https://www.canada.ca/fr/transparence/confidentialite.html"
+			}
+		},
+		"site-menu": {
+			"jobs": {
+				"text": "Emplois et milieu de travail",
+				"link": "https://www.canada.ca/en/services/jobs.html"
+			},
+			"immigate": {
+				"text": "Immigration et citoyenneté",
+				"link": "https://www.canada.ca/en/services/immigration-citizenship.html"
+			},
+			"voyage": {
+				"text": "Voyage et tourisme",
+				"link": "https://voyage.gc.ca/"
+			},
+			"enterprise": {
+				"text": "Entreprises et industrie",
+				"link": "https://www.canada.ca/fr/services/entreprises.html"
+			},
+			"benefits": {
+				"text": "Prestations",
+				"link": "https://www.canada.ca/en/services/benefits.html"
+			},
+			"health": {
+				"text": "Santé",
+				"link": "https://www.canada.ca/fr/services/sante.html"
+			},
+			"taxes": {
+				"text": "Impôts",
+				"link": "https://www.canada.ca/fr/services/impots.html"
+			},
+			"environment": {
+				"text": "Environnement et ressources naturelles",
+				"link": "https://www.canada.ca/fr/services/environnement.html"
+			},
+			"security": {
+				"text": "Sécurité nationale et défense",
+				"link": "https://www.canada.ca/fr/services/defense.html"
+			},
+			"culture": {
+				"text": "Culture, histoire et sport",
+				"link": "https://www.canada.ca/fr/services/culture.html"
+			},
+			"justice": {
+				"text": "Services de police, justice et urgences",
+				"link": "https://www.canada.ca/fr/services/police.html"
+			},
+			"transport": {
+				"text": "Transport et infrastructure",
+				"link": "https://www.canada.ca/en/services/transport.html"
+			},
+			"world": {
+				"text": "Canada et le monde",
+				"link": "http://international.gc.ca/world-monde/index.aspx?lang=fra"
+			},
+			"money": {
+				"text": "Argent et finances",
+				"link": "https://www.canada.ca/fr/services/finance.html"
+			},
+			"science": {
+				"text": "Science et innovation",
+				"link": "https://www.canada.ca/fr/services/science.html"
+			}
+		}
+	},
+	"category": {
+		"aboriginal_supplier": {
+			"Y": "Oui",
+			"N": "Non"
+		}
+	},
+	"gcweb": {
+		"about-title": "À propos de ce site",
+		"about-govt-title": "À propos du gouvernement",
+		"date-modified": "Date de modification : ",
+
+		"report-problem": {
+			"text": "Signaler un problème ou une erreur sur cette page",
+			"link": "https://www.canada.ca/fr/signaler-probleme.html"
+		},
+		"bc-home": {
+			"text": "Accueil",
+			"link": "https://www.canada.ca/fr.html"
+		},
+		"menu-link": "/gcweb/ajax/sitemenu-v2-fr.html",
+
+		"here-title": "Vous êtes ici&nbpsp;:",
+		"language-sel-title": "Sélection de la langue",
+		"page-top-link": "Haut de la page ",
+		"report-link": "Signaler un problème ou une erreur sur cette page",
+		"search-menus-title": "Recherche et menus",
+		"search-placeholder": "Rechercher dans Canada.ca",
+		"search-title": "Recherche",
+		"search-post": "https://www.canada.ca/fr/sr/srb.html",
+		"search-website": "Recherchez le site Web",
+		"skip-about-link": "Passer à « Au sujet du gouvernement »",
+		"skip-main-link": "Passer au contenu principal"
+	},
+	"home": {
+		"title": "Livreorg GC (bêta)",
+		"title-orgs": "Sociétés fédérales actives",
+		"title-certs": "Titres de compétences détenus",
+		"title-this-week": "Titres de compétences ajoutés cette semaine",
+		"lead": "OrgBook GC est un répertoire public des données vérifiables sur les sociétés de régime fédéral au Canada.",
+		"guides-and-help": {
+			"title": "Guides et aide",
+			"about-orgbook-link": "À propos du Livreorg GC (bêta)",
+			"about-orgbook-url": "#TODO",
+			"privacy-notice-link": "Avis de confidentialité",
+			"privacy-notice-url": "#TODO",
+			"help-link": "Aide",
+			"help-url": "#TODO"
+		},
+		"about":
+		{
+			"title" : "À propos du OrgBook",
+			"blurb" : "Ce nouveau service fait appel à une technologie de pointe fondée sur la Blockchain, qui constitue la base pour aider le gouvernement du Canada à passer à une économie numérique.\n\nLivreorg GC soutient notre objectif de rationaliser et de moderniser les services destinés aux petites et moyennes entreprises (PME) dans le cadre de notre stratégie gouvernementale sur le numérique.\n\nÀ l'heure actuelle, vous pouvez utiliser Livreorg GC pour vérifier rapidement si une organisation est légalement enregistrée pour faire des affaires au Canada en tant que société.\n\nL'avenir, des données vérifiables sur d'autres types d'organisations, comme les entreprises individuelles et les sociétés, seront ajoutées. De plus, d'autres données vérifiables importantes, comme les permis, licences et autres accréditations que détiennent ces organismes, seront ajoutées à Livreorg GC."
+		},
+		"contact-us": {
+			"title": "Communiquez avec nous",
+			"email": "Adresse électronique&nbsp;",
+			"email-link": "support@achatsetventes.gc.ca"
+		},
+		"related-services": {
+			"title": "Services et information connexes",
+			"supplier-registration-link": "Données d'inscription des fournisseurs (DIF)",
+			"supplier-registration-url": "#TODO",
+			"buyandsell-link": "achatsetventes.gc.ca",
+			"buyandsell-url": "https://achatsetventes.gc.ca"
+		}
+	},
+	"search": {
+		"title": "Recherche d’une société de régime fédéral",
+		"by-cert": "Certification",
+		"by-location": "Location",
+		"by-name": "Name",
+		"by-pbn": "PBN",
+		"no-results": "No results",
+		"placeholder": "search",
+		"results-title": "Search Results",
+		"return-link": "Back to Search"
+	},
+	"records":
+	{
+		"title" : "Statistiques actuelles"
+	}
 }

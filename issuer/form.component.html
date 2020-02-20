@@ -1,0 +1,41 @@
+<section id="issuer" class="page-min-height" *ngIf="(result$ | async) as result">
+  <loading-indicator [loading]="result.loading"></loading-indicator>
+  <error-message [error]="result.error"></error-message>
+
+  <div class="row" *ngIf="result.data as record">
+    <div class="col-md-12">
+      <h1 class="page-title mrgn-tp-sm" id="contentStart">{{record.name}}
+        <span *ngIf="record.abbreviation">({{record.abbreviation}})</span>
+      </h1>
+
+        <!-- <div class="row form-group" *ngIf="record.has_logo">
+          <div class="col-sm-8 form-field">
+            <div class="issuer-logo">
+              <img [src]="record.logo_url | resolveUrl" [alt]="'issuer.logo-image' | translate">
+            </div>
+          </div>
+        </div> -->
+        <dl class="issuer-info dl-horizontal brdr-0">
+          <dt translate>issuer.did</dt>
+          <dd><a class="body-link text-identifier" [href]="didResolverUrl" rel="external">{{fullDid}}</a>
+            <small><span class="fa fa-external-link"></span></small></dd>
+
+            <dt translate>issuer.website</dt>
+            <dd><a class="body-link" [href]="record.url" rel="external">{{record.url}}</a>
+            <small><span class="fa fa-external-link"></span></small></dd>
+
+            <dt translate>contact.email</dt>
+            <dd><a class="body-link" [href]="'mailto:' + record.email" rel="external">{{record.email}}</a>
+            <small><span class="fa fa-external-link"></span></small></dd>
+        </dl>
+    </div>
+  </div>
+
+  <div class="row issuer-creds" *ngIf="result.loaded">
+    <div class="col-sm-12" *ngIf="(credTypes$ | async) as credTypes">
+      <h2 class="h2"><span class="field-name" translate>issuer.cred-types</span></h2>
+      <loading-indicator [loading]="credTypes.loading"></loading-indicator>
+      <cred-type-list [records]="credTypes.data" *ngIf="credTypes.loaded"></cred-type-list>
+    </div>
+  </div>
+</section>
